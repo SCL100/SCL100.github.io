@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Markdown基础语法#0 | ETRFobox Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://SCL100.github.io/favicon.ico?v=1673966360707">
+<link rel="stylesheet" href="https://SCL100.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-253593117-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-253593117-1');
+</script>
+
+
+    <meta name="description" content="Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown..." />
+    <meta name="keywords" content="Markdown,教程" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SCL100.github.io">
+        <img src="https://SCL100.github.io/images/avatar.png?v=1673966360707" class="site-logo">
+        <h1 class="site-title">ETRFobox Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/jiaochengguidang" class="site-nav">
+            教程系列
+          </a>
+        
+      
+        
+          <a href="/about" class="site-nav">
+            关于本站
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SCL100" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+         无限进步
+    </div>
+    <div class="site-footer">
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=505688656&auto=1&height=32"></iframe><p>
+   由Gridea提供支持 Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://SCL100.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Markdown基础语法#0</h2>
+            <div class="post-date">2023-01-11</div>
+            
+              <div class="feature-container" style="background-image: url('https://SCL100.github.io/post-images/markdownjiaocheng0.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用。</p>
+<!-- more -->
+<h2 id="1-标题"><strong>1. 标题</strong></h2>
+<p>   Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。 类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题），例如：</p>
+<pre><code>This is an H1
+=======
+
+This is an H2
+----------
+</code></pre>
+<h1 id="this-is-an-h1">This is an H1</h1>
+<h2 id="this-is-an-h2">This is an H2</h2>
+<blockquote>
+<p>这里需要注意一点，由于分割线也是 “----”， 因此在使用分割线时，一定要空一行，不然会把上方的文字识别为第二阶标题。</p>
+</blockquote>
+<p><br><br></p>
+<h2 id="2-字体"><strong>2. 字体</strong></h2>
+<p>    Markdown 使用星号 *  底线 _ 波浪号 ~ 作为标记强调字词的符号，你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。 示例：</p>
+<pre><code>**这是加粗**
+__这也是加粗__
+*这是倾斜*
+_这也是倾斜_
+***这是加粗倾斜***
+~~这是加删除线~~
+</code></pre>
+<p><strong>这是加粗</strong><br>
+<strong>这也是加粗</strong><br>
+<em>这是倾斜</em><br>
+<em>这也是倾斜</em><br>
+<em><strong>这是加粗倾斜</strong></em><br>
+<s>这是加删除线</s></p>
+<blockquote>
+<p>注意：强调也可以直接插在文字中间，但是如果你的 * 和 _ 两边都有空白的话，它们就只会被当成普通的符号。 如果要在文字前后直接插入普通的星号或底线，你可以用反斜线 \ 。</p>
+</blockquote>
+<p><br><br></p>
+<h2 id="3-分割线"><strong>3. 分割线</strong></h2>
+<p>   你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
+<pre><code>* * *
+***
+**********
+- - -
+_________________
+</code></pre>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<p><br><br></p>
+<h2 id="4-引用"><strong>4. 引用</strong></h2>
+<p>   在 Markdown 文件中建立一个区块引用在引用的文字前加 &gt; 即可。例如：</p>
+<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&gt; 
+&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+&gt; id sem consectetuer libero luctus adipiscing.
+</code></pre>
+<blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,<br>
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<br>
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse<br>
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<p>Markdown 也允许你偷懒只在整个段落的第一行最前面加上 &gt; ：</p>
+<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre>
+<blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,<br>
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<br>
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+<blockquote>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse<br>
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<p>区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 &gt; ：</p>
+<pre><code>&gt; &gt; This is the first level of quoting.
+&gt;
+&gt; &gt; &gt; This is the second level of quoting
+&gt;
+&gt; &gt; &gt; &gt; This is the third level of quoting
+</code></pre>
+<blockquote>
+<blockquote>
+<p>This is the first level of quoting.</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>This is the second level of quoting</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>This is the third level of quoting</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等。</p>
+</blockquote>
+<p><br><br></p>
+<h2 id="5-列表"><strong>5. 列表</strong></h2>
+<p>   Markdown 支持有序列表和无序列表。 无序列表使用星号、加号或是减号作为列表标记。 示例：</p>
+<pre><code>- 列表内容
++ 列表内容
+* 列表内容
+
+注意：- + * 跟内容之间都要有一个空格
+</code></pre>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<p>有序列表则使用数字接着一个英文句点作为标记。 示例：</p>
+<pre><code>1. 列表内容
+2. 列表内容
+3. 列表内容
+
+注意：序号跟内容之间要有空格
+</code></pre>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<p>列表也是可以嵌套的，上一级和下一级之间敲三个空格即可。例如：</p>
+<pre><code>* 一级无序列表内容
+   * 二级无序列表内容
+   * 二级无序列表内容
+   * 二级无序列表内容
+</code></pre>
+<ul>
+<li>一级无序列表内容
+<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+</ul>
+<p>要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：</p>
+<pre><code>*   This is an example. This sentence has no meaning
+    This is an example. This is an example. This 
+    sentence has no meaning. This sentence has no meaning
+*   This is an example. This sentence has no meaning
+    This sentence has no meaning
+</code></pre>
+<ul>
+<li>This is an example. This sentence has no meaning<br>
+This is an example. This is an example. This<br>
+sentence has no meaning. This sentence has no meaning</li>
+<li>This is an example. This sentence has no meaning<br>
+This sentence has no meaning</li>
+</ul>
+<p>有一种偷懒的写法也可以：</p>
+<pre><code>*   This is an example. This sentence has no meaning. 
+This is an example. This is an example. This 
+sentence has no meaning.This sentence has no meaning
+*   This is an example. This sentence has no meaning.
+This sentence has no meaning
+</code></pre>
+<ul>
+<li>This is an example. This sentence has no meaning.<br>
+This is an example. This is an example. This<br>
+sentence has no meaning.This sentence has no meaning</li>
+<li>This is an example. This sentence has no meaning.<br>
+This sentence has no meaning</li>
+</ul>
+<p><br><br></p>
+<h2 id="6-表格"><strong>6. 表格</strong></h2>
+<p>   Markdown的表格编写十分简单<br>
+示例：</p>
+<pre><code>表头|表头|表头
+---|:--:|---:
+内容|内容|内容
+内容|内容|内容
+
+第二行分割表头和内容。
+- 有一个就行，为了对齐，多加了几个
+文字默认居左
+-两边加：表示文字居中
+-右边加：表示文字居右
+注：原生的语法两边都要用 | 包起来。此处省略
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th style="text-align:center">表头</th>
+<th style="text-align:right">表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:right">内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td style="text-align:center">内容</td>
+<td style="text-align:right">内容</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<h2 id="7-代码"><strong>7. 代码</strong></h2>
+<p>   在Markdown中加入代码块有两种方式： 第一种，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如：</p>
+<pre><code>这是一个普通段落：
+
+    这是一个代码区块。
+
+(当然，前面要有一个空行和前面的文字分隔开)
+</code></pre>
+<p>效果如下<br>
+这是一个普通段落：</p>
+<pre><code>这是一个代码区块。
+</code></pre>
+<p>第二种方法似乎是更为常用， 单行代码：代码之间分别用一个反引号包起来即可，例如：</p>
+<pre><code>这里有一句代码`代码内容`。
+</code></pre>
+<p>这里有一句代码<code>代码内容</code>。</p>
+<p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行，例如：</p>
+<pre><code>```
+  代码...
+  代码...
+  代码...
+```
+</code></pre>
+<p>效果如下：</p>
+<pre><code>  代码...
+  代码...
+  代码...
+</code></pre>
+<blockquote>
+<p>还可以在上面的 ``` 后面注明你的代码类型，可以产生相应的代码高亮。</p>
+</blockquote>
+<p><br><br></p>
+<h2 id="8-段落缩进和换行"><strong>8. 段落缩进和换行</strong></h2>
+<p>   一个 Markdown 段落是由一个或多个连续的文本行组成<br>
+可以在文段开头添加<code>&amp;ensp;</code>来缩进2英文字符，如果要实现“首行缩进2中文字符”效果，添加两次<code>&amp;ensp;</code>即可<br>
+在文段末尾，可以通过添加<code>&lt;br&gt;</code>或<code>&lt;p&gt;</code>实现换行效果</p>
+<blockquote>
+<p>CommonMark 和其它几种轻量级标记语言支持在行尾添加反斜杠 \ 的方式实现换行，但是并非所有 Markdown 应用程序都支持此种方式，因此从兼容性的角度来看，不推荐使用。</p>
+</blockquote>
+<p><br><br></p>
+<p><strong>本文仅展示与教示Markdown的基础语法，部分内容转自 <a href="https://markdown.com.cn/basic-syntax/">Markdown官网教程</a></strong></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://SCL100.github.io/tag/PTzocbT8b/" class="tag">
+                    Markdown
+                  </a>
+                
+                  <a href="https://SCL100.github.io/tag/NRr_o8Xp6/" class="tag">
+                    教程
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SCL100.github.io/grideajiaocheng/">
+                  <h3 class="post-title">
+                    Gridea 上手教程——小白也可以用的 GitHub Pages 搭建工具
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dbccbee5c7520b8cdd78',
+        clientSecret: '5e793556571e677c8e984cb7b100066cbef14090',
+        repo: 'SCL100.github.io',
+        owner: 'SCL100',
+        admin: ['SCL100'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

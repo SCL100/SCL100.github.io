@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Markdown代码链接进阶语法#3 | ETRFobox Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://SCL100.github.io/favicon.ico?v=1673966360707">
+<link rel="stylesheet" href="https://SCL100.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-253593117-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-253593117-1');
+</script>
+
+
+    <meta name="description" content="使用Markdown更快捷在您的文章中添加Code区块和跳转链接，使其更明了的显示，并可以配合HTML标签使用使其更加完善。
+
+本文内提及的内容涉及Markdown扩展语法，在编写参考之前请检查所使用的编辑器是否支持
+
+代码区块
+添加代码区..." />
+    <meta name="keywords" content="Markdown,教程" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SCL100.github.io">
+        <img src="https://SCL100.github.io/images/avatar.png?v=1673966360707" class="site-logo">
+        <h1 class="site-title">ETRFobox Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/jiaochengguidang" class="site-nav">
+            教程系列
+          </a>
+        
+      
+        
+          <a href="/about" class="site-nav">
+            关于本站
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SCL100" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+         无限进步
+    </div>
+    <div class="site-footer">
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=505688656&auto=1&height=32"></iframe><p>
+   由Gridea提供支持 Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://SCL100.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Markdown代码链接进阶语法#3</h2>
+            <div class="post-date">2023-01-13</div>
+            
+              <div class="feature-container" style="background-image: url('https://SCL100.github.io/post-images/markdownjiaocheng3.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>使用Markdown更快捷在您的文章中添加Code区块和跳转链接，使其更明了的显示，并可以配合HTML标签使用使其更加完善。</p>
+<!-- more -->
+<p><code>本文内提及的内容涉及Markdown扩展语法，在编写参考之前请检查所使用的编辑器是否支持</code></p>
+<p><br><br></p>
+<h1 id="代码区块"><strong>代码区块</strong></h1>
+<h2 id="添加代码区块">添加代码区块</h2>
+<p>要将单词或短语表示为代码，请将其包裹在反引号 ` 中。</p>
+<p>代码块<br>
+要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。</p>
+<pre><code>    &lt;html&gt;
+      &lt;head&gt;
+      &lt;/head&gt;
+    &lt;/html&gt;
+</code></pre>
+<p>渲染效果如下：</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+<p><br><br></p>
+<h2 id="围栏代码块">围栏代码块</h2>
+<p>如果您不方便使用缩进式代码块，根据Markdown处理器或编辑器的不同，您将在代码块之前和之后的行上使用三个反引号 ``` 或三个波浪号 ~~~ 。</p>
+<pre><code>```
+{
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Smith&quot;,
+  &quot;age&quot;: 25
+}
+```
+</code></pre>
+<p>渲染效果如下所示：</p>
+<pre><code>{
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Smith&quot;,
+  &quot;age&quot;: 25
+}
+</code></pre>
+<p><br><br></p>
+<h2 id="语法高亮">语法高亮</h2>
+<p>许多Markdown处理器都支持受围栏代码块的语法突出显示。使用此功能，您可以为编写代码的任何语言添加颜色突出显示。要添加语法突出显示，请在受防护的代码块之前的反引号旁边指定一种语言。</p>
+<pre><code>```json
+{
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Smith&quot;,
+  &quot;age&quot;: 25
+}
+```
+</code></pre>
+<p>呈现的输出如下所示：</p>
+<pre><code class="language-json">{
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Smith&quot;,
+  &quot;age&quot;: 25
+}
+</code></pre>
+<br>
+<hr>
+<br>
+<h1 id="链接"><strong>链接</strong></h1>
+<h2 id="添加链接">添加链接</h2>
+<p>链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。</p>
+<p>超链接Markdown语法代码：<code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code></p>
+<p>对应的HTML代码：<code>&lt;a href=&quot;超链接地址&quot; title=&quot;超链接title&quot;&gt;超链接显示名&lt;/a&gt;</code></p>
+<pre><code>这是一个链接 [Markdown语法](https://markdown.com.cn)。
+</code></pre>
+<p>渲染效果如下：</p>
+<p>这是一个链接 <a href="https://markdown.com.cn">Markdown语法</a>。</p>
+<p><br><br></p>
+<h2 id="给链接增加-title">给链接增加 Title</h2>
+<p>链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。</p>
+<pre><code>这是一个链接 [Markdown语法](https://markdown.com.cn &quot;markdown官网教程&quot;)。
+</code></pre>
+<p>渲染效果如下：<br>
+这是一个链接 <a href="https://markdown.com.cn" title="markdown官网教程">Markdown语法</a>。</p>
+<p><br><br></p>
+<p>网址和Email地址<br>
+使用尖括号可以很方便地把URL或者email地址变成可点击的链接。</p>
+<pre><code>&lt;https://markdown.com.cn&gt;
+&lt;fake@example.com&gt;
+</code></pre>
+<p>渲染效果如下：</p>
+<p><a href="https://markdown.com.cn">https://markdown.com.cn</a><br>
+<a href="mailto:fake@example.com">fake@example.com</a></p>
+<p><br><br></p>
+<h2 id="带格式化的链接">带格式化的链接</h2>
+<p>强调 链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。</p>
+<pre><code>I love supporting the **[EFF](https://eff.org)**.
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+See the section on [`code`](#code).
+</code></pre>
+<p>渲染效果如下：<br>
+I love supporting the <strong><a href="https://eff.org">EFF</a></strong>.<br>
+This is the <em><a href="https://www.markdownguide.org">Markdown Guide</a></em>.<br>
+See the section on <a href="#code"><code>code</code></a>.</p>
+<p><br><br></p>
+<h2 id="引用类型链接">引用类型链接</h2>
+<p>引用样式链接是一种特殊的链接，它使URL在Markdown中更易于显示和阅读。参考样式链接分为两部分：与文本保持内联的部分以及存储在文件中其他位置的部分，以使文本易于阅读。</p>
+<ol>
+<li>链接的第一部分格式</li>
+</ol>
+<p>引用类型的链接的第一部分使用两组括号进行格式设置。第一组方括号包围应显示为链接的文本。第二组括号显示了一个标签，该标签用于指向您存储在文档其他位置的链接。</p>
+<p>尽管不是必需的，可以在第一组和第二组括号之间包含一个空格。第二组括号中的标签不区分大小写，可以包含字母，数字，空格或标点符号。</p>
+<p>以下示例格式对于链接的第一部分效果相同：</p>
+<ul>
+<li><code>[hobbit-hole][1]</code></li>
+<li><code>[hobbit-hole] [1]</code></li>
+</ul>
+<ol start="2">
+<li>链接的第二部分格式<br>
+引用类型链接的第二部分使用以下属性设置格式：</li>
+</ol>
+<p>放在括号中的标签，其后紧跟一个冒号和至少一个空格（例如<code>[label]:</code>）。<br>
+链接的URL，可以选择将其括在尖括号中。<br>
+链接的可选标题，可以将其括在双引号，单引号或括号中。<br>
+以下示例格式对于链接的第二部分效果相同：</p>
+<ul>
+<li><code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle</code></li>
+<li><code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle &quot;Hobbit lifestyles&quot;</code></li>
+<li><code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle 'Hobbit lifestyles'</code></li>
+<li><code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)</code></li>
+<li><code>[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; &quot;Hobbit lifestyles&quot;</code></li>
+<li><code>[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; 'Hobbit lifestyles'</code></li>
+<li><code>[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; (Hobbit lifestyles)</code><br>
+可以将链接的第二部分放在Markdown文档中的任何位置。有些人将它们放在出现的段落之后，有些人则将它们放在文档的末尾（例如尾注或脚注）。</li>
+</ul>
+<p><br><br></p>
+<h2 id="自动网址链接">自动网址链接</h2>
+<p>许多Markdown处理器会自动将URL转换为链接。这意味着如果您输入http://www.example.com，即使您<strong>未使用方括号</strong>，您的Markdown处理器也会自动将其转换为链接。</p>
+<pre><code>http://www.example.com
+</code></pre>
+<p>呈现的输出如下所示：</p>
+<p>http://www.example.com</p>
+<h2 id="禁用自动url链接">禁用自动URL链接</h2>
+<p>如果您不希望自动链接URL，则可以通过将URL表示为带反引号的代码来删除该链接。</p>
+<pre><code>`http://www.example.com`
+</code></pre>
+<p>呈现的输出如下所示：</p>
+<p><code>http://www.example.com</code></p>
+<p><br><br></p>
+<p><strong>本文仅展示与教示Markdown的代码块/链接语法，部分内容转自 <a href="https://markdown.com.cn/basic-syntax/">Markdown官网教程</a></strong></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://SCL100.github.io/tag/PTzocbT8b/" class="tag">
+                    Markdown
+                  </a>
+                
+                  <a href="https://SCL100.github.io/tag/NRr_o8Xp6/" class="tag">
+                    教程
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SCL100.github.io/markdownjiaocheng2/">
+                  <h3 class="post-title">
+                    Markdown图片图表进阶语法#2
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dbccbee5c7520b8cdd78',
+        clientSecret: '5e793556571e677c8e984cb7b100066cbef14090',
+        repo: 'SCL100.github.io',
+        owner: 'SCL100',
+        admin: ['SCL100'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

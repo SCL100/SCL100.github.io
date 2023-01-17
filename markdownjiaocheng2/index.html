@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Markdown图片图表进阶语法#2 | ETRFobox Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://SCL100.github.io/favicon.ico?v=1673966360707">
+<link rel="stylesheet" href="https://SCL100.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-253593117-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-253593117-1');
+</script>
+
+
+    <meta name="description" content="Markdown的图片与图表都可以用极其简单且清晰的方式添加与展示，同样，图片与图表也都可以使用对应的Html代码实现，并且快速渲染。
+
+1. 图片
+添加图片
+要添加图像，请使用感叹号 ! , 然后在方括号增加替代文本，图片链接放在圆括号里..." />
+    <meta name="keywords" content="Markdown,教程" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SCL100.github.io">
+        <img src="https://SCL100.github.io/images/avatar.png?v=1673966360707" class="site-logo">
+        <h1 class="site-title">ETRFobox Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/jiaochengguidang" class="site-nav">
+            教程系列
+          </a>
+        
+      
+        
+          <a href="/about" class="site-nav">
+            关于本站
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SCL100" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+         无限进步
+    </div>
+    <div class="site-footer">
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=505688656&auto=1&height=32"></iframe><p>
+   由Gridea提供支持 Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://SCL100.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Markdown图片图表进阶语法#2</h2>
+            <div class="post-date">2023-01-12</div>
+            
+              <div class="feature-container" style="background-image: url('https://SCL100.github.io/post-images/markdownjiaocheng2.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>Markdown的图片与图表都可以用极其简单且清晰的方式添加与展示，同样，图片与图表也都可以使用对应的Html代码实现，并且快速渲染。</p>
+<!-- more -->
+<h1 id="1-图片"><strong>1. 图片</strong></h1>
+<h2 id="添加图片">添加图片</h2>
+<p>要添加图像，请使用感叹号 <code>!</code> , 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。<br>
+插入图片Markdown语法代码：</p>
+<pre><code>![图片alt](图片链接 &quot;图片title&quot;)
+</code></pre>
+<p>对应的HTML代码：</p>
+<pre><code>&lt;img src=&quot;图片链接&quot; alt=&quot;图片alt&quot; title=&quot;图片title&quot;&gt;
+</code></pre>
+<p>示例：</p>
+<pre><code>![Markdown主图](https://markdown.com.cn/hero.png &quot;主图&quot;)
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://markdown.com.cn/hero.png" alt="Markdown主图" title="主图" loading="lazy"></figure>
+<p><br><br></p>
+<h2 id="链接图片">链接图片</h2>
+<p>给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。<br>
+用户点击图片即可跳转到链接地址。</p>
+<pre><code>[![Markdown主图](https://markdown.com.cn/hero.png &quot;主图&quot;)]((https://markdown.com.cn))
+</code></pre>
+<figure data-type="image" tabindex="2"><a href="(https://markdown.com.cn)"><img src="https://markdown.com.cn/hero.png" alt="Markdown主图" title="主图" loading="lazy"></a></figure>
+<br>
+<hr>
+<br>
+<h1 id="2-表格"><strong>2. 表格</strong></h1>
+<h2 id="添加表格">添加表格</h2>
+<p>要添加表，请使用三个或多个连字符（---）创建每列的标题，并使用管道符（|）分隔每列。您可以选择在表的任一端添加管道符。<br>
+示例：</p>
+<pre><code>| 表头      | 表头  |
+|  ------  | ------ |
+| 文本      | 文本  |
+| 文本      | 文本  |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文本</td>
+<td>文本</td>
+</tr>
+<tr>
+<td>文本</td>
+<td>文本</td>
+</tr>
+</tbody>
+</table>
+<p>单元格宽度可以变化，如下所示。呈现的输出将看起来相同。</p>
+<pre><code>| 表头                 | 表头  |
+|  --  | ------------------ |
+| 文本             | 文本  |
+| 文本      | 文本  |
+</code></pre>
+<blockquote>
+<p>使用连字符和管道创建表可能很麻烦。为了加快该过程，请尝试使用<a href="https://www.tablesgenerator.com/markdown_tables">Markdown Tables Generator</a>。使用图形界面构建表，然后将生成的Markdown格式的文本复制到文件中</p>
+</blockquote>
+<br>
+<h2 id="表格中对齐">表格中对齐</h2>
+<p>您可以通过在标题行中的连字符的左侧，右侧或两侧添加冒号（:），将列中的文本对齐到左侧，右侧或中心。</p>
+<pre><code>| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+</code></pre>
+<p>呈现的输出如下所示：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:center">居中</th>
+<th style="text-align:right">右对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Text</td>
+<td style="text-align:center">Text</td>
+<td style="text-align:right">Text</td>
+</tr>
+<tr>
+<td style="text-align:left">Text</td>
+<td style="text-align:center">Text</td>
+<td style="text-align:right">Text</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2 id="表格中嵌套">表格中嵌套</h2>
+<p>您可以在表格中设置文本格式。例如，您可以添加链接，代码（仅反引号 ` 中的单词或短语，而不是代码块）和强调。</p>
+<p>您不能添加标题，块引用，列表，水平规则，图像或HTML标签。</p>
+<pre><code>| 表头      | 表头  |
+| ------- | ------ |
+| `代码`      | [链接](https://markdown.com.cn)  |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>代码</code></td>
+<td><a href="https://markdown.com.cn">链接</a></td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2 id="在表中转义管道符">在表中转义管道符</h2>
+<p>您可以使用表格的HTML字符代码（|）在表中显示竖线 | 字符.</p>
+<p><br><br></p>
+<p><strong>本文仅展示与教示Markdown的图片/图表语法，部分内容转自 <a href="https://markdown.com.cn/basic-syntax/">Markdown官网教程</a></strong></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://SCL100.github.io/tag/PTzocbT8b/" class="tag">
+                    Markdown
+                  </a>
+                
+                  <a href="https://SCL100.github.io/tag/NRr_o8Xp6/" class="tag">
+                    教程
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SCL100.github.io/markdownjiaocheng1/">
+                  <h3 class="post-title">
+                    Markdown纯文本进阶语法#1
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dbccbee5c7520b8cdd78',
+        clientSecret: '5e793556571e677c8e984cb7b100066cbef14090',
+        repo: 'SCL100.github.io',
+        owner: 'SCL100',
+        admin: ['SCL100'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

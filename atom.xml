@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://SCL100.github.io</id>
+    <title>ETRFobox Blog</title>
+    <updated>2023-01-17T14:41:13.088Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://SCL100.github.io"/>
+    <link rel="self" href="https://SCL100.github.io/atom.xml"/>
+    <subtitle>   无限进步</subtitle>
+    <logo>https://SCL100.github.io/images/avatar.png</logo>
+    <icon>https://SCL100.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, ETRFobox Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[HTML教程引入#0]]></title>
+        <id>https://SCL100.github.io/HTML0/</id>
+        <link href="https://SCL100.github.io/HTML0/">
+        </link>
+        <updated>2023-01-17T14:58:27.000Z</updated>
+        <summary type="html"><![CDATA[<p>超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。<br>
+您可以使用 HTML 来建立自己的 WEB 站点，HTML 运行在浏览器上，由浏览器来解析。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。<br>
+您可以使用 HTML 来建立自己的 WEB 站点，HTML 运行在浏览器上，由浏览器来解析。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown列表进阶语法#4]]></title>
+        <id>https://SCL100.github.io/markdownjiaocheng4/</id>
+        <link href="https://SCL100.github.io/markdownjiaocheng4/">
+        </link>
+        <updated>2023-01-14T10:57:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>Markdown的列表可以更方便的展示文本的前后，归属关系，它们可以在帮助您在您的文章中更清晰的表述文义。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Markdown的列表可以更方便的展示文本的前后，归属关系，它们可以在帮助您在您的文章中更清晰的表述文义。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown代码链接进阶语法#3]]></title>
+        <id>https://SCL100.github.io/markdownjiaocheng3/</id>
+        <link href="https://SCL100.github.io/markdownjiaocheng3/">
+        </link>
+        <updated>2023-01-13T11:00:41.000Z</updated>
+        <summary type="html"><![CDATA[<p>使用Markdown更快捷在您的文章中添加Code区块和跳转链接，使其更明了的显示，并可以配合HTML标签使用使其更加完善。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>使用Markdown更快捷在您的文章中添加Code区块和跳转链接，使其更明了的显示，并可以配合HTML标签使用使其更加完善。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown图片图表进阶语法#2]]></title>
+        <id>https://SCL100.github.io/markdownjiaocheng2/</id>
+        <link href="https://SCL100.github.io/markdownjiaocheng2/">
+        </link>
+        <updated>2023-01-12T11:39:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>Markdown的图片与图表都可以用极其简单且清晰的方式添加与展示，同样，图片与图表也都可以使用对应的Html代码实现，并且快速渲染。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Markdown的图片与图表都可以用极其简单且清晰的方式添加与展示，同样，图片与图表也都可以使用对应的Html代码实现，并且快速渲染。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown纯文本进阶语法#1]]></title>
+        <id>https://SCL100.github.io/markdownjiaocheng1/</id>
+        <link href="https://SCL100.github.io/markdownjiaocheng1/">
+        </link>
+        <updated>2023-01-12T01:06:29.000Z</updated>
+        <summary type="html"><![CDATA[<p>Markdown基础的语法其实写一些东西已经足够用了，但有时候还想要文档看起来更炫一些，这时候需要一些用于排版的进阶语法，实际上，这里的绝大部分功能就是要通过HTML的标签来实现了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Markdown基础的语法其实写一些东西已经足够用了，但有时候还想要文档看起来更炫一些，这时候需要一些用于排版的进阶语法，实际上，这里的绝大部分功能就是要通过HTML的标签来实现了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown基础语法#0]]></title>
+        <id>https://SCL100.github.io/markdownjiaocheng0/</id>
+        <link href="https://SCL100.github.io/markdownjiaocheng0/">
+        </link>
+        <updated>2023-01-11T11:13:17.000Z</updated>
+        <summary type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea 上手教程——小白也可以用的 GitHub Pages 搭建工具]]></title>
+        <id>https://SCL100.github.io/grideajiaocheng/</id>
+        <link href="https://SCL100.github.io/grideajiaocheng/">
+        </link>
+        <updated>2023-01-10T08:51:20.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>置顶</strong><br>
+本人参考教材，傻瓜式，转自知乎用户契卡《Gridea 上手教程——小白也可以用的 GitHub Pages 搭建工具》</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>置顶</strong><br>
+本人参考教材，傻瓜式，转自知乎用户契卡《Gridea 上手教程——小白也可以用的 GitHub Pages 搭建工具》</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有些牵挂，一直都是默默无闻]]></title>
+        <id>https://SCL100.github.io/you-xie-qian-gua-yi-zhi-du-shi-mo-mo-wu-wen/</id>
+        <link href="https://SCL100.github.io/you-xie-qian-gua-yi-zhi-du-shi-mo-mo-wu-wen/">
+        </link>
+        <updated>2023-01-10T00:33:32.000Z</updated>
+        <summary type="html"><![CDATA[<p>很快，炊烟就不会再飘起，在寂静的山里，一切都将归于平静，没人说得清他们为什么要来这里，也没人看得懂他们会在这里留下什么。短短的日子，承载不了太多的东西，唯有漫长的回忆，可以将所有的一切囊括起来。熟悉的琴声再次响起，是喜悦还是哀愁，也只有听琴声那头的人才能知晓。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>很快，炊烟就不会再飘起，在寂静的山里，一切都将归于平静，没人说得清他们为什么要来这里，也没人看得懂他们会在这里留下什么。短短的日子，承载不了太多的东西，唯有漫长的回忆，可以将所有的一切囊括起来。熟悉的琴声再次响起，是喜悦还是哀愁，也只有听琴声那头的人才能知晓。</p>
+]]></content>
+    </entry>
+</feed>

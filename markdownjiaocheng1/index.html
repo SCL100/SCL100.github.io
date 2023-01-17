@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Markdown纯文本进阶语法#1 | ETRFobox Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://SCL100.github.io/favicon.ico?v=1673966360707">
+<link rel="stylesheet" href="https://SCL100.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-253593117-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-253593117-1');
+</script>
+
+
+    <meta name="description" content="Markdown基础的语法其实写一些东西已经足够用了，但有时候还想要文档看起来更炫一些，这时候需要一些用于排版的进阶语法，实际上，这里的绝大部分功能就是要通过HTML的标签来实现了。
+
+
+1. 更改字体、大小、颜色
+&lt;font fac..." />
+    <meta name="keywords" content="Markdown,教程" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SCL100.github.io">
+        <img src="https://SCL100.github.io/images/avatar.png?v=1673966360707" class="site-logo">
+        <h1 class="site-title">ETRFobox Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/jiaochengguidang" class="site-nav">
+            教程系列
+          </a>
+        
+      
+        
+          <a href="/about" class="site-nav">
+            关于本站
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SCL100" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+         无限进步
+    </div>
+    <div class="site-footer">
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=505688656&auto=1&height=32"></iframe><p>
+   由Gridea提供支持 Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://SCL100.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Markdown纯文本进阶语法#1</h2>
+            <div class="post-date">2023-01-12</div>
+            
+              <div class="feature-container" style="background-image: url('https://SCL100.github.io/post-images/markdownjiaocheng1.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>Markdown基础的语法其实写一些东西已经足够用了，但有时候还想要文档看起来更炫一些，这时候需要一些用于排版的进阶语法，实际上，这里的绝大部分功能就是要通过HTML的标签来实现了。</p>
+<!-- more -->
+<p><br><br></p>
+<h2 id="1-更改字体-大小-颜色"><strong>1. 更改字体、大小、颜色</strong></h2>
+<pre><code>&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;
+&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;
+&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;
+&lt;font color=red&gt;我是红色&lt;/font&gt;
+&lt;font color=#008000&gt;我是绿色&lt;/font&gt;
+&lt;font color=Blue&gt;我是蓝色&lt;/font&gt;
+&lt;font size=5&gt;我是尺寸&lt;/font&gt;
+&lt;font face=&quot;黑体&quot; color=green size=5&gt;我是黑体，绿色，尺寸为5&lt;/font&gt;
+</code></pre>
+<p><font face="黑体">我是黑体字</font><br>
+<font face="微软雅黑">我是微软雅黑</font><br>
+<font face="STCAIYUN">我是华文彩云</font><br>
+<font color=red>我是红色</font><br>
+<font color=#008000>我是绿色</font><br>
+<font color=Blue>我是蓝色</font><br>
+<font size=5>我是尺寸</font><br>
+<font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font></p>
+<p><br><br></p>
+<h2 id="2-为文字添加背景色"><strong>2. 为文字添加背景色</strong></h2>
+<p>由于 style 标签和标签的 style 属性不被支持，所以这里只能是借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色。故这里对于文字背景色的设置，只是将那一整行看作一个表格，更改了那个格子的背景色（bgcolor）。 语法：</p>
+<pre><code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=yellow&gt;背景色yellow&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</code></pre>
+<table><tr><td bgcolor=yellow>背景色yellow</td></tr></table>
+<p><br><br></p>
+<h2 id="3-设置文字对齐方式"><strong>3. 设置文字对齐方式</strong></h2>
+<pre><code>&lt;center&gt;居中&lt;/center&gt;
+&lt;p align=&quot;left&quot;&gt;左对齐&lt;/p&gt;
+&lt;p align=&quot;right&quot;&gt;右对齐&lt;/p&gt;
+</code></pre>
+<center>居中</center>
+<p align="left">左对齐</p>
+<p align="right">右对齐</p>
+<p><br><br></p>
+<h2 id="4-加入角标"><strong>4. 加入角标</strong></h2>
+<p>使用HTML中添加角标的语法即可：</p>
+<pre><code>H&lt;sub&gt;2&lt;/sub&gt;O  CO&lt;sub&gt;2&lt;/sub&gt;
+Gridea&lt;sup&gt;TM&lt;/sup&gt;
+</code></pre>
+<p>H<sub>2</sub>O  CO<sub>2</sub><br>
+Gridea<sup>TM</sup></p>
+<p><br><br></p>
+<h2 id="5-缩进字符"><strong>5. 缩进字符</strong></h2>
+<pre><code>空格一个中文: &amp;emsp;你好
+空格半个中文: &amp;ensp;你好
+空格键的空格: &amp;nbsp;你好
+</code></pre>
+<p>空格一个中文:  你好<br>
+空格半个中文:  你好<br>
+空格键的空格:  你好</p>
+<p><br><br></p>
+<p><strong>本文仅展示与教示Markdown的文本语法，部分内容转自 <a href="https://markdown.com.cn/basic-syntax/">Markdown官网教程</a></strong></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://SCL100.github.io/tag/PTzocbT8b/" class="tag">
+                    Markdown
+                  </a>
+                
+                  <a href="https://SCL100.github.io/tag/NRr_o8Xp6/" class="tag">
+                    教程
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SCL100.github.io/markdownjiaocheng0/">
+                  <h3 class="post-title">
+                    Markdown基础语法#0
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dbccbee5c7520b8cdd78',
+        clientSecret: '5e793556571e677c8e984cb7b100066cbef14090',
+        repo: 'SCL100.github.io',
+        owner: 'SCL100',
+        admin: ['SCL100'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

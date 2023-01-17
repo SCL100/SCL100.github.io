@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Gridea 上手教程——小白也可以用的 GitHub Pages 搭建工具 | ETRFobox Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://SCL100.github.io/favicon.ico?v=1673966360707">
+<link rel="stylesheet" href="https://SCL100.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-253593117-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-253593117-1');
+</script>
+
+
+    <meta name="description" content="置顶
+本人参考教材，傻瓜式，转自知乎用户契卡《Gridea 上手教程——小白也可以用的 GitHub Pages 搭建工具》
+
+
+
+本地软件安装
+
+
+Git 安装：
+Gridea 的同步功能依赖本地 Git 客户端，所以我们需要先安装 Gi..." />
+    <meta name="keywords" content="教程,转载" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SCL100.github.io">
+        <img src="https://SCL100.github.io/images/avatar.png?v=1673966360707" class="site-logo">
+        <h1 class="site-title">ETRFobox Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/jiaochengguidang" class="site-nav">
+            教程系列
+          </a>
+        
+      
+        
+          <a href="/about" class="site-nav">
+            关于本站
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SCL100" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+         无限进步
+    </div>
+    <div class="site-footer">
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=505688656&auto=1&height=32"></iframe><p>
+   由Gridea提供支持 Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://SCL100.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Gridea 上手教程——小白也可以用的 GitHub Pages 搭建工具</h2>
+            <div class="post-date">2023-01-10</div>
+            
+              <div class="feature-container" style="background-image: url('https://SCL100.github.io/post-images/grideajiaocheng.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p><strong>置顶</strong><br>
+本人参考教材，傻瓜式，转自知乎用户契卡《Gridea 上手教程——小白也可以用的 GitHub Pages 搭建工具》</p>
+<!-- more -->
+<ol>
+<li>
+<p><strong>本地软件安装</strong></p>
+<ol>
+<li>
+<p>Git 安装：<br>
+Gridea 的同步功能依赖本地 Git 客户端，所以我们需要先安装 Git。 Git官网下载平台对应的安装程序。安装没有特别的要求，一路下一步即可。</p>
+</li>
+<li>
+<p>Gridea 安装：<br>
+Gridea官网下载对应平台的安装程序进行安装。</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>GitHub Pages 创建</strong></p>
+<ol>
+<li>
+<p>仓库创建<br>
+首先，需要创建一个仓库，建议仓库为 http://username.github.io。根据官方文档， GitHub 会默认将名称符合要求的仓库设置成 GitHub Pages 可访问类型。例如我的用户名是 yym0924，所以仓库名就是http://yym0924.github.io。不过我创建仓库的时候并未自动启用 GitHub Pages，遇到这种情况手动开启即可。</p>
+</li>
+<li>
+<p>基本设置<br>
+开通 GitHub Pages<br>
+这里也说明下手动启用 GitHub Pages 的方式。<br>
+<img src="https://SCL100.github.io/post-images/1673341057518.webp" alt="" loading="lazy"><br>
+找到 GitHub Pages 设置的地方 点击 Choose a theme 随意选择一个主题。因为后续我们使用 Gridea 设置主题，这边选择主题只是为了开启 GitHub Pages 可访问类型。<br>
+PS：新版github貌似不能选择主题了，可以创建一个.html文件来开启 GitHub Pages</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>创建新 token</strong><br>
+Gridea 管理 GitHub Pages 需要 token。登录 GitHub 后创建一个新的 token。<br>
+<img src="https://SCL100.github.io/post-images/1673341369345.webp" alt="" loading="lazy"><br>
+权限可以全给<br>
+<img src="https://SCL100.github.io/post-images/1673341478102.webp" alt="" loading="lazy"><br>
+请把新建的 token 复制一个地方保存起来，因为关闭这个网页后你就再也看不到它了。</p>
+</li>
+<li>
+<p><strong>Gridea 初始配置</strong></p>
+<ol>
+<li>远程配置<br>
+<img src="https://SCL100.github.io/post-images/1673341571243.webp" alt="" loading="lazy"></li>
+</ol>
+<p>做好基本设置并保存。这步设置好后就可以开始使用。你可以点击客户端左下角的预览按钮来查看本地渲染效果，或者点击同步进行博客最新内容的部署。</p>
+<ol>
+<li>开启文章评论<br>
+Gridea 支持 Gitalk 和 Disqus 两种评论系统，这里我使用 Gitalk 评论系统。<br>
+首先你需要有一个 GitHub OAuth Applicatio 。</li>
+</ol>
+<blockquote>
+<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。</p>
+</blockquote>
+<p><img src="https://SCL100.github.io/post-images/1673342166419.webp" alt="" loading="lazy"><br>
+<img src="https://SCL100.github.io/post-images/1673342202173.jfif" alt="" loading="lazy"><br>
+创建完成后可将 Client ID 和 Client Secret 复制保存到本地。<br>
+<img src="https://SCL100.github.io/post-images/1673342212976.webp" alt="" loading="lazy"><br>
+设置、保存并同步后评论模块就可用了。<br>
+<img src="https://SCL100.github.io/post-images/1673342263658.jfif" alt="" loading="lazy"><br>
+首次使用时可能出现上图情况，使用 GitHub 登录一次即可。</p>
+</li>
+</ol>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://SCL100.github.io/tag/NRr_o8Xp6/" class="tag">
+                    教程
+                  </a>
+                
+                  <a href="https://SCL100.github.io/tag/2AdWrOiYh/" class="tag">
+                    转载
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SCL100.github.io/you-xie-qian-gua-yi-zhi-du-shi-mo-mo-wu-wen/">
+                  <h3 class="post-title">
+                    有些牵挂，一直都是默默无闻
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dbccbee5c7520b8cdd78',
+        clientSecret: '5e793556571e677c8e984cb7b100066cbef14090',
+        repo: 'SCL100.github.io',
+        owner: 'SCL100',
+        admin: ['SCL100'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
